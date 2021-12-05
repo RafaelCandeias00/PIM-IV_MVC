@@ -1,0 +1,6 @@
+C:\Users\rafael\Desktop\HotelFazenda_PimIV\Database\bin\Debug\Database.dll
+C:\Users\rafael\Desktop\HotelFazenda_PimIV\Database\bin\Debug\Database.pdb
+C:\Users\rafael\Desktop\HotelFazenda_PimIV\Database\obj\Debug\Database.csproj.CoreCompileInputs.cache
+C:\Users\rafael\Desktop\HotelFazenda_PimIV\Database\obj\Debug\Database.dll
+C:\Users\rafael\Desktop\HotelFazenda_PimIV\Database\obj\Debug\Database.pdb
+C:\Users\rafael\Desktop\HotelFazenda_PimIV\Database\obj\Debug\Database.csproj.AssemblyReference.cache

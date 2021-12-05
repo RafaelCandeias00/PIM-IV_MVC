@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "Consulta";
+    List<Business.Pagina> paginas = ViewBag.Paginas;
+}
+
+@if (TempData["Sucesso"] != null)
+{
+    <div class="alert alert-success">@TempData["Sucesso"]</div>
+}
+@if (TempData["Erro"] != null)
+{
+    <div class="alert alert-danger">@TempData["Erro"]</div>
+}
+
+<h2>Consulta de Hospede</h2>
+
+<div class="jumbotron">
+    <div>
+        <a href="/Consulta/NovoCadastro" class="btn btn-default">Novo cadastro</a>
+    </div>
+    <table class="table table-condensed">
+        <tr>
+            <td>Nome</td>
+            <td>Data de nascimento</td>
+            <td>Sexo</td>
+            <td>Possui PcD</td>
+            <td>Num Celular</td>
+            <td>E-mail</td>
+            <td></td>
+            <td></td>
+        </tr>
+        @foreach (var p in paginas)
+        {
+            <tr>
+                <td>@p.Nome</td>
+                <td>@p.DataNascimento.ToString("MM/dd/yyyy")</td>
+                <td>@p.Sexo</td>
+                <td>@p.PossuiPcD</td>
+                <td>@p.NumCelular</td>
+                <td>@p.Email</td>
+                <td><a href="/Consulta/@p.Id/EditarCadastro" class="btn btn-primary">Atualizar</a></td>
+                <td><a href="/Consulta/@p.Id/ExcluirCadastro" class="btn btn-danger" onclick="ValidarExclusao(@p.Id, evento)">Excluir</a></td>
+            </tr>
+        }
+    </table>
+</div>

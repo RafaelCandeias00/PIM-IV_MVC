@@ -1,0 +1,151 @@
+﻿.row {
+    height: 0px;
+    
+}
+footer p{
+    display: block; 
+}
+h2 {
+    text-align: center;
+}
+
+/* LAZER */
+.ImgLazer {
+    border-radius: 5px;
+    width: 600px;
+    height: 533px;
+}
+.TituloLazer {
+    text-align: center;
+    font-size: 15px;
+    margin: 5px 0px 0px 0px;
+}
+.col-sm-6, .col-md-4, thumbnail{
+    width: 380px;
+    height: 280px;
+
+    margin-bottom: 10px;
+}
+body .container {
+    /*margin-left: auto;
+    margin-right: auto;*/
+
+    margin: 0 auto; 
+}
+
+
+/* RESERVA */
+p {
+    text-align: center;
+    font-size: 25px;
+}
+
+input, select, textarea {
+    border: 1px #919194 solid;
+    border-radius: 7px;
+    height: 35px;
+    justify-content: flex-start;
+}
+
+select {
+    height: 38.6px;
+}
+
+textarea {
+    resize: none;
+    height: 70px;
+}
+
+.line-1, .line-2, .line-3, .line-4, .line-5 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.line-6 {
+    text-align: center;
+}
+
+#nome {
+    width: 700px;
+}
+
+#cpf, #tipo-quarto, #valor-diaria, #tipo-reserva, #data-entrada, #data-saida, #criancas, #adultos, #hora-entrada, #hora-saida {
+    width: 325px
+}
+
+#observacoes {
+    width: 1080px;
+}
+
+#data-entrada, #data-saida, #hora-entrada, #hora-saida {
+    text-align: center;
+}
+
+button {
+    background-color: rgb(41, 163, 41);
+    border-radius: 7px;
+    color: #e6dcdc;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+@media (max-width: 1095px) {
+
+    body {
+        width: 735px;
+    }
+
+    #nome {
+        width: 475px;
+    }
+
+    #cpf, #tipo-quarto, #valor-diaria, #tipo-reserva, #data-entrada, #data-saida, #criancas, #adultos, #hora-entrada, #hora-saida {
+        width: 225px;
+    }
+
+    #observacao {
+        width: 735px;
+    }
+}
+
+@media (max-width: 760px) {
+
+    body {
+        width: 500px;
+    }
+
+    #cpf, #tipo-quarto, #valor-diaria, #tipo-reserva, #data-entrada, #data-saida, #criancas, #adultos, #hora-entrada, #hora-saida, #nome {
+        width: 500px;
+        margin-top: 0px;
+    }
+
+    #observacao {
+        width: 500px;
+    }
+
+    .line-1, .line-2, .line-3, .line-4, .line-5 {
+        display: block;
+    }
+
+    .line-2, .line-3, .line-4, .line-5 {
+        margin-top: 0px;
+    }
+
+    .container {
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 510px) {
+    body {
+        width: 300px;
+    }
+
+    #cpf, #observacoes, #tipo-quarto, #valor-diaria, #tipo-reserva, #data-entrada, #data-saida, #criancas, #adultos, #hora-entrada, #hora-saida {
+        width: 460px;
+    }
+}
+/*-------------------------------------------------------------------------------------------------------------------*/
